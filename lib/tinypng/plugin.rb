@@ -16,7 +16,7 @@ module Danger
   # @see  kingcos/danger-tinypng
   # @tags monday, weekends, time, rattata
   #
-  class DangerTinypng < Plugin
+  class DangerTinyPNG < Plugin
 
     # An attribute that you can read/write from your Dangerfile
     #

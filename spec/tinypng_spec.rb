@@ -1,9 +1,9 @@
 require File.expand_path("../spec_helper", __FILE__)
 
 module Danger
-  describe Danger::DangerTinypng do
+  describe Danger::DangerTinyPNG do
     it "should be a plugin" do
-      expect(Danger::DangerTinypng.new(nil)).to be_a Danger::Plugin
+      expect(Danger::DangerTinyPNG.new(nil)).to be_a Danger::Plugin
     end
 
     #
