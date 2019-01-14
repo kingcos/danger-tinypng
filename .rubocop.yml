@@ -7,7 +7,7 @@ AllCops:
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
-  Enabled: true
+  Enabled: false
 
 # kind_of? is a good way to check a type
 Style/ClassCheck:

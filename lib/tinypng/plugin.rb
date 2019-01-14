@@ -1,4 +1,6 @@
-require 'tinify'
+# frozen_string_literal: false
+
+require "tinify"
 
 module Danger
   # This is your plugin class. Any attributes or methods you expose here will
@@ -19,7 +21,6 @@ module Danger
   # @tags monday, weekends, time, rattata
   #
   class DangerTinyPNG < Plugin
-
     # An attribute that you can read/write from your Dangerfile
     #
     # @return   [Array<String>]

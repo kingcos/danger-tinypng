@@ -1,4 +1,6 @@
-require File.expand_path("../spec_helper", __FILE__)
+# frozen_string_literal: false
+
+require File.expand_path('spec_helper', __dir__)
 
 module Danger
   describe Danger::DangerTinyPNG do
@@ -40,7 +42,6 @@ module Danger
 
         expect(@dangerfile.status_report[:warnings]).to eq([])
       end
-
     end
   end
 end
