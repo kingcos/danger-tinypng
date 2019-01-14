@@ -1,0 +1,1 @@
+require "tinypng/plugin"
