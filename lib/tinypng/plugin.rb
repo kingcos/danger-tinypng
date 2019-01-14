@@ -1,3 +1,5 @@
+require 'tinify'
+
 module Danger
   # This is your plugin class. Any attributes or methods you expose here will
   # be available from within your Dangerfile.
