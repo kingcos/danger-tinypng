@@ -1,6 +1,6 @@
 # danger-tinypng
 
-A description of danger-tinypng.
+**danger-tinypng** is a plugin for [Danger](https://danger.systems/swift) to compress your PNG/JPEG images by using TinyPNG API.
 
 ## Installation
 
