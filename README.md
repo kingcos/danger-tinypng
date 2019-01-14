@@ -1,5 +1,7 @@
 # danger-tinypng
 
+[![Build Status](https://travis-ci.org/kingcos/danger-tinypng.svg?branch=master)](https://travis-ci.org/kingcos/danger-tinypng)
+
 **danger-tinypng** is a plugin for [Danger](https://danger.systems/swift) to compress your PNG/JPEG images by using TinyPNG API.
 
 ## Installation
