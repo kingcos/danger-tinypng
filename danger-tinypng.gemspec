@@ -5,11 +5,11 @@ require 'tinypng/gem_version.rb'
 
 Gem::Specification.new do |spec|
   spec.name          = 'danger-tinypng'
-  spec.version       = Tinypng::VERSION
+  spec.version       = TinyPNG::VERSION
   spec.authors       = ['kingcos']
   spec.email         = ['2821836721v@gmail.com']
-  spec.description   = %q{A short description of danger-tinypng.}
-  spec.summary       = %q{A longer description of danger-tinypng.}
+  spec.description   = %q{danger-tinypng is a plugin for Danger to compress your PNG/JPEG images by using TinyPNG API.}
+  spec.summary       = %q{For more, please check https://github.com/kingcos/danger-tinypng.}
   spec.homepage      = 'https://github.com/kingcos/danger-tinypng'
   spec.license       = 'MIT'
 
