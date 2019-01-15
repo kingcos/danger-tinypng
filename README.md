@@ -20,3 +20,7 @@
 3. Run `bundle exec rake spec` to run the tests.
 4. Use `bundle exec guard` to automatically have tests run as you make changes.
 5. Make your changes.
+
+---
+
+> ***Do you want to check your text during CI? Please check my another Danger plugin called [danger-text_checker](https://github.com/kingcos/danger-text_checker).***
