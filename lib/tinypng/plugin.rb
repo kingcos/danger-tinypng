@@ -3,34 +3,46 @@
 require "tinify"
 
 module Danger
-  # This is your plugin class. Any attributes or methods you expose here will
-  # be available from within your Dangerfile.
+  # Compress your PNG/JPEG images by using TinyPNG API.
+  # For more, please visit [danger-tinypng](https://github.com/kingcos/danger-tinypng)
   #
-  # To be published on the Danger plugins site, you will need to have
-  # the public interface documented. Danger uses [YARD](http://yardoc.org/)
-  # for generating documentation from your plugin source, and you can verify
-  # by running `danger plugins lint` or `bundle exec rake spec`.
+  # @example Setup your TinyPNG API key, then run it.
   #
-  # You should replace these comments with a public description of your library.
-  #
-  # @example Ensure people are well warned about merging on Mondays
-  #
-  #          my_plugin.warn_on_mondays
+  #          tinypng.api_key = 'REGISTER_YOUR_API_KEY_ON_TINYPNG.COM'
+  #          tinypng.run
   #
   # @see  kingcos/danger-tinypng
-  # @tags monday, weekends, time, rattata
+  # @tags ci,danger-plugin,tinypng,tinyjpg
   #
   class DangerTinyPNG < Plugin
-    # An attribute that you can read/write from your Dangerfile
+    # Setup TinyPNG API key.
     #
-    # @return   [Array<String>]
-    attr_accessor :my_attribute
+    # @param    [String]
+    # @return   [void]
+    def api_key(api_key)
+      Tinify.key = api_key
+      Tinify.validate!
+    rescue Tinify::AccountError => e
+      fail 'Account Error - ' + e.message
+    rescue Tinify::ServerError => e
+      fail 'Server Error - ' + e.message
+    rescue Tinify::ConnectionError => e
+      fail 'Connection Error - ' + e.message
+    rescue Tinify::Error => e
+      fail 'Error - ' + e.message
+    end
 
-    # A method that you can call from your Dangerfile
-    # @return   [Array<String>]
+    # Run plugin
     #
-    def warn_on_mondays
-      warn 'Trying to merge code on a Monday' if Date.today.wday == 1
+    # @return   [void]
+    def run
+      puts 'Run'
+    end
+
+    private
+
+    def filter_image_files
+      puts 'filter_image_files'
     end
   end
 end

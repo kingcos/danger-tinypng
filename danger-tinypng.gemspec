@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['kingcos']
   spec.email         = ['2821836721v@gmail.com']
   spec.description   = %q{danger-tinypng is a plugin for Danger to compress your PNG/JPEG images by using TinyPNG API.}
-  spec.summary       = %q{For more, please check https://github.com/kingcos/danger-tinypng.}
+  spec.summary       = %q{For more, please visit https://github.com/kingcos/danger-tinypng.}
   spec.homepage      = 'https://github.com/kingcos/danger-tinypng'
   spec.license       = 'MIT'
 
